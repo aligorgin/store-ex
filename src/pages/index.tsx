@@ -1,5 +1,6 @@
 import { type NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 // import Link from 'next/link';
 // import { signIn, signOut, useSession } from 'next-auth/react';
 
@@ -16,25 +17,27 @@ const Home: NextPage = () => {
 				<meta name="description" content="عرضه کننده کفش های اورجینال" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="mx-auto min-h-screen max-w-5xl">
+			<main className="mx-auto min-h-screen max-w-4xl">
 				<nav className="flex w-full items-center justify-between pt-6">
 					<div>
-						<div className="cursor-pointer rounded-sm bg-orange-500 px-3 py-1 transition hover:bg-orange-600 active:scale-90">
+						<div className="cursor-pointer rounded-sm bg-orange-700 px-3 pt-1 pb-2 transition hover:bg-orange-600 active:scale-90">
 							{Words.signIn}
 						</div>
 					</div>
 					<div className="flex flex-row-reverse items-center">
-						<div className="pl-12">
-							<div className="animate-hue-animation rounded-full bg-orange-900 p-2">بدو</div>
-						</div>
+						<Link href={'/'} className="cursor-pointer pl-12">
+							<div className="animate-hue-animation rounded-full bg-orange-900 px-2 pb-2 pt-1">
+								بدو
+							</div>
+						</Link>
 						<div className="flex space-x-6 ">
-							<div className="cursor-pointer opacity-50 transition hover:opacity-80">
+							<div className="cursor-pointer opacity-70 transition hover:opacity-100">
 								{Words.nav3}
 							</div>
-							<div className="cursor-pointer opacity-50 transition hover:opacity-80">
+							<div className="cursor-pointer opacity-70 transition hover:opacity-100">
 								{Words.nav2}
 							</div>
-							<div className="cursor-pointer opacity-50 transition hover:opacity-80">
+							<div className="cursor-pointer opacity-70 transition hover:opacity-100">
 								{Words.nav1}
 							</div>
 						</div>

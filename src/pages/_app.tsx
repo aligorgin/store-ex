@@ -7,7 +7,7 @@ import { trpc } from '../utils/trpc';
 
 import '../styles/globals.css';
 
-const myFont = localFont({ src: './b-compset.ttf' });
+const myFont = localFont({ src: './fonts/IRANYekan/iranyekan-bold.ttf' });
 
 const MyApp: AppType<{ session: Session | null }> = ({
 	Component,
